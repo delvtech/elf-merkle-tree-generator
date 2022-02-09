@@ -1,0 +1,35 @@
+{
+  "name": "elf-merkle-tree-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx hardhat run src/index.ts --network mainnet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/element-fi/elf-merkle-tree-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/element-fi/elf-merkle-tree-generator/issues"
+  },
+  "homepage": "https://github.com/element-fi/elf-merkle-tree-generator#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@types/readline-sync": "^1.4.4",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.3",
+    "hardhat-gas-reporter": "^1.0.7",
+    "hardhat-typechain": "^0.3.5",
+    "merkletreejs": "^0.2.27",
+    "readline-sync": "^1.4.10",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
