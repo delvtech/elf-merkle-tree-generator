@@ -16,8 +16,9 @@ async function main() {
   for (var key in parsedData) {
     leaves.push({
       address: key,
-      value: ethers.BigNumber.from(parsedData[key])
-    })
+      tokenId: ethers.BigNumber.from(parsedData[key][0]),
+      hash: parsedData[key][1]
+    });
   }
 
   // create Merkle tree
@@ -31,7 +32,8 @@ async function main() {
     // construct proof for the leaf
     const _proof = tree.getHexProof(await hashMerkleLeaf({
       address: _leaf.address,
-      value: _leaf.value
+      tokenId: _leaf.tokenId,
+      hash: _leaf.hash
     }));
 
     // create writeable object

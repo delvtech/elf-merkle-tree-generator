@@ -9,7 +9,8 @@ export interface MerkleData {
 
 export interface MerkleLeaf {
   address: string;
-  value: BigNumberish;
+  tokenId: BigNumberish;
+  hash: string;
 }
 
 export async function getMerkleTree(accounts: MerkleLeaf[]) {
@@ -24,8 +25,8 @@ export async function getMerkleTree(accounts: MerkleLeaf[]) {
 
 export async function hashMerkleLeaf(leaf: MerkleLeaf) {
   return ethers.utils.solidityKeccak256(
-    ["address", "uint256"],
-    [leaf.address, leaf.value]
+    ["address", "uint256", "string"],
+    [leaf.address, leaf.tokenId, leaf.hash]
   );
 }
 
