@@ -23,6 +23,7 @@ source elf.env
 ## Run
 ```bash
 npm run build
+
 ```
 ### Input
 Format for the input file of as a JSON. An example file is included using the format `{address:value}`
@@ -34,6 +35,11 @@ exampleData.json
 	"0xce7bBBfE0F71A5b6B9eA84146E52c94F83738bFB": ["18", "QmXKJxWzgwpa1Hh5xDqALSKYqiSDPyvqR53ytfQVjsTRfk"],
 	"0x70EBB6d266F6AC194d50f75430D5314914fEe246": ["19", "QmTtNxDmHujc3rjN7h91NYnfgrgjvWNKK28BwHPNnRqxoR"]
 }
+```
+
+When the script prompts, type the input file name:
+```bash
+$ Input filepath: exampleData.json
 ```
 
 ### Output
