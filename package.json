@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/delv-tech/elf-merkle-tree-generator.git"
+    "url": "git+https://github.com/delvtech/elf-merkle-tree-generator.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/delv-tech/elf-merkle-tree-generator/issues"
+    "url": "https://github.com/delvtech/elf-merkle-tree-generator/issues"
   },
-  "homepage": "https://github.com/delv-tech/elf-merkle-tree-generator#readme",
+  "homepage": "https://github.com/delvtech/elf-merkle-tree-generator#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
     "@nomiclabs/hardhat-waffle": "^2.0.2",

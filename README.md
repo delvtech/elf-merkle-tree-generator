@@ -1,7 +1,7 @@
 # elf-merkle-tree-generator
 
 ## Install
-`git clone https://github.com/delv-tech/elf-merkle-tree-generator.git`
+`git clone https://github.com/delvtech/elf-merkle-tree-generator.git`
 `npm install`
 
 ## Configure
